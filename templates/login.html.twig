@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <form action="<?php echo $view['router']->path('login') ?>" method="post">
+        <label for="username">Email:</label>
+        <input type="text" id="username" name="_username" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="_password" />
+
+        <button type="submit">login</button>
+    </form>
+{% endblock %}
